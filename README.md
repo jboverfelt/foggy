@@ -6,6 +6,8 @@ composable and free of dependencies on one another. However,
 a basic-fog-score function is provided that utilizes default
 helper functions.
 
+[![Build Status](https://travis-ci.org/jboverfelt/foggy.png)](https://travis-ci.org/jboverfelt/foggy)
+
 ## Usage
 
 (basic-fog-score block-of-text)
