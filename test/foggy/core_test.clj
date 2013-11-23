@@ -5,8 +5,14 @@
 (def paragraph "This has multiple sentences. It's cool! But 
                what does it all mean?")
 
-(deftest basic
-  (testing "basic parsing functions"
-    (is (= (count (words "This has four words.")) 4))
-    (is (= (count (sentences paragraph)) 3))
+(deftest words-test
+  (testing "basic word splits"
+    (is (= (count (words "This has four words.")) 4))))
+
+(deftest sentences-test
+    (testing "basic sentence splits"
+    (is (= (count (sentences paragraph)) 3))))
+
+(deftest syllables-test
+    (testing "basic syllable splits for a word"
     (is (= (count (simple-syllables "parsing")) 2))))
