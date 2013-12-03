@@ -16,7 +16,7 @@
    on vowel groupings. NOTE: This will miss several
    special cases in English"
   [word]
-  (filter #(not= %1 "") (s/split word #"[^aeiouy]+")))
+  (filter #(not= %1 "") (s/split (s/lower-case word) #"[^aeiouy]+")))
 
 (defn complex-words
   "Given some text, a function that splits

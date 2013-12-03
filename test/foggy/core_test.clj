@@ -15,4 +15,5 @@
 
 (deftest syllables-test
     (testing "basic syllable splits for a word"
-    (is (= (count (simple-syllables "parsing")) 2))))
+    (is (= (count (simple-syllables "parsing")) 2))
+    (is (= (count (simple-syllables "pArsInG")) 2))))
